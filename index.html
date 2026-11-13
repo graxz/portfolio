@@ -17,10 +17,14 @@
       }
     }
   </script>
+  <style>
+    body { background: #f5f4f2; }
+    .big-text { font-feature-settings: "ss01"; }
+  </style>
 </head>
-<body class="font-sans antialiased bg-white text-neutral-900">
+<body class="font-sans antialiased text-neutral-900">
   <!-- Nav -->
-  <nav class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur-md border-b border-neutral-100">
+  <nav class="fixed top-0 inset-x-0 z-50 bg-[#f5f4f2]/90 backdrop-blur-md">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#" class="text-sm font-medium tracking-tight">Isaddora Freitas</a>
       <div class="hidden sm:flex items-center gap-8 text-sm text-neutral-500">
@@ -33,93 +37,96 @@
   </nav>
 
   <!-- Hero -->
-  <header class="pt-32 pb-24 px-6">
+  <header class="pt-36 pb-20 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="flex items-center gap-4 mb-10">
-        <img src="https://avatars.githubusercontent.com/u/60474834?v=4" alt="Isaddora Freitas" class="w-14 h-14 rounded-full object-cover">
-        <div>
-          <p class="text-sm text-neutral-500">Backend · São Paulo</p>
-        </div>
+      <div class="flex items-center gap-4 mb-12">
+        <img src="https://avatars.githubusercontent.com/u/60474834?v=4" alt="Isaddora Freitas" class="w-12 h-12 rounded-full object-cover">
+        <p class="text-sm text-neutral-500">Backend · São Paulo</p>
       </div>
-      <h1 class="text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tighter leading-[0.95] max-w-3xl">
-        Backend que funciona<br>e dá pra manter.
+
+      <h1 class="big-text text-6xl sm:text-7xl md:text-8xl font-semibold tracking-tighter leading-[0.9] max-w-4xl">
+        BACKEND<br>QUE FUNCIONA.
       </h1>
-      <p class="mt-8 text-lg sm:text-xl text-neutral-600 max-w-xl leading-relaxed">
-        Desenvolvedora focada em TypeScript e Node. Construo APIs, sistemas internos e automações com clareza e observabilidade. Rumo a Tech Lead.
+
+      <p class="mt-10 text-xl sm:text-2xl text-neutral-600 max-w-lg leading-snug font-medium">
+        APIs, sistemas e automações em TypeScript e Node. Com clareza, observabilidade e sem enrolação.
       </p>
-      <div class="mt-10 flex gap-4">
-        <a href="https://github.com/graxz" target="_blank" class="text-sm px-5 py-2.5 border border-neutral-300 rounded-full hover:bg-neutral-50 transition-colors">GitHub</a>
-        <a href="https://www.linkedin.com/in/isaddorafreitas/" target="_blank" class="text-sm px-5 py-2.5 border border-neutral-300 rounded-full hover:bg-neutral-50 transition-colors">LinkedIn</a>
+
+      <div class="mt-12 flex flex-wrap gap-3">
+        <a href="https://github.com/graxz" target="_blank" class="text-sm px-6 py-3 bg-neutral-900 text-white rounded-full hover:bg-neutral-800 transition-colors">GitHub</a>
+        <a href="https://www.linkedin.com/in/isaddorafreitas/" target="_blank" class="text-sm px-6 py-3 border border-neutral-300 rounded-full hover:bg-white/50 transition-colors">LinkedIn</a>
       </div>
     </div>
   </header>
 
   <!-- 01 Sobre -->
-  <section id="sobre" class="py-24 px-6 border-t border-neutral-100">
+  <section id="sobre" class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="flex items-baseline gap-4 mb-12">
+      <div class="flex items-center gap-4 mb-10">
         <span class="text-sm font-medium text-neutral-400">01</span>
-        <div class="w-12 h-px bg-neutral-300"></div>
-        <h2 class="text-sm font-medium tracking-wide uppercase text-neutral-400">Sobre</h2>
+        <div class="flex-1 h-px bg-neutral-300 max-w-[80px]"></div>
+        <span class="text-sm font-medium tracking-wide uppercase text-neutral-400">Sobre</span>
       </div>
-      <div class="grid md:grid-cols-12 gap-12">
-        <div class="md:col-span-7 text-lg leading-relaxed text-neutral-700 space-y-6">
-          <p>Gosto de backend porque é onde a maioria dos problemas reais se resolve. Quando precisa, entro no frontend também.</p>
-          <p>Passo tempo estudando arquitetura, padrões e, mais recentemente, sistemas de IA — principalmente como montar RAG, agentes e fluxos observáveis sem esconder a complexidade.</p>
-          <p>Fora do código: jogos e dois gatos (um bravo e um tranquilo).</p>
+
+      <div class="grid md:grid-cols-12 gap-16">
+        <div class="md:col-span-7 text-xl leading-relaxed text-neutral-800 space-y-6">
+          <p>Gosto de backend porque é onde a maioria dos problemas reais se resolve de verdade.</p>
+          <p>Estudo arquitetura, padrões e sistemas de IA — principalmente como montar RAG, agentes e fluxos observáveis sem esconder a complexidade.</p>
+          <p class="text-neutral-500">Dois gatos e jogos no tempo livre.</p>
         </div>
-        <div class="md:col-span-4 md:col-start-9 space-y-4 text-sm">
-          <div class="flex justify-between py-3 border-b border-neutral-100"><span class="text-neutral-500">Local</span><span>São Paulo</span></div>
-          <div class="flex justify-between py-3 border-b border-neutral-100"><span class="text-neutral-500">Foco</span><span>Backend</span></div>
-          <div class="flex justify-between py-3 border-b border-neutral-100"><span class="text-neutral-500">Objetivo</span><span>Tech Lead</span></div>
-          <div class="flex justify-between py-3"><span class="text-neutral-500">Principal</span><span>TypeScript · Node · NestJS</span></div>
+        <div class="md:col-span-4 md:col-start-9 space-y-5 text-sm">
+          <div class="flex justify-between py-4 border-b border-neutral-200"><span class="text-neutral-500">Local</span><span class="font-medium">São Paulo</span></div>
+          <div class="flex justify-between py-4 border-b border-neutral-200"><span class="text-neutral-500">Foco</span><span class="font-medium">Backend</span></div>
+          <div class="flex justify-between py-4 border-b border-neutral-200"><span class="text-neutral-500">Objetivo</span><span class="font-medium">Tech Lead</span></div>
+          <div class="flex justify-between py-4"><span class="text-neutral-500">Principal</span><span class="font-medium">TS · Node · Nest</span></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 02 Trajetória -->
-  <section id="trajetoria" class="py-24 px-6 border-t border-neutral-100">
+  <section id="trajetoria" class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="flex items-baseline gap-4 mb-12">
+      <div class="flex items-center gap-4 mb-12">
         <span class="text-sm font-medium text-neutral-400">02</span>
-        <div class="w-12 h-px bg-neutral-300"></div>
-        <h2 class="text-sm font-medium tracking-wide uppercase text-neutral-400">Trajetória</h2>
+        <div class="flex-1 h-px bg-neutral-300 max-w-[80px]"></div>
+        <span class="text-sm font-medium tracking-wide uppercase text-neutral-400">Trajetória</span>
       </div>
-      <div class="max-w-2xl space-y-10">
-        <div class="flex gap-8">
-          <div class="text-sm text-neutral-400 w-28 shrink-0 pt-0.5">2021 — atual</div>
+
+      <div class="max-w-2xl space-y-12">
+        <div class="flex gap-10">
+          <div class="text-sm text-neutral-400 w-32 shrink-0 pt-1">2021 — atual</div>
           <div>
-            <div class="font-medium">Full-Stack Developer</div>
-            <div class="text-neutral-600 text-sm mt-0.5">ACT Consultoria</div>
+            <div class="text-lg font-medium">Full-Stack Developer</div>
+            <div class="text-neutral-600 mt-1">ACT Consultoria</div>
           </div>
         </div>
-        <div class="flex gap-8">
-          <div class="text-sm text-neutral-400 w-28 shrink-0 pt-0.5">2021 — atual</div>
+        <div class="flex gap-10">
+          <div class="text-sm text-neutral-400 w-32 shrink-0 pt-1">2021 — atual</div>
           <div>
-            <div class="font-medium">Back-End Developer</div>
-            <div class="text-neutral-600 text-sm mt-0.5">Squid Digital</div>
+            <div class="text-lg font-medium">Back-End Developer</div>
+            <div class="text-neutral-600 mt-1">Squid Digital</div>
           </div>
         </div>
-        <div class="flex gap-8">
-          <div class="text-sm text-neutral-400 w-28 shrink-0 pt-0.5">2021 — 2022</div>
+        <div class="flex gap-10">
+          <div class="text-sm text-neutral-400 w-32 shrink-0 pt-1">2021 — 2022</div>
           <div>
-            <div class="font-medium">Back-End Developer</div>
-            <div class="text-neutral-600 text-sm mt-0.5">Matilha Digital</div>
+            <div class="text-lg font-medium">Back-End Developer</div>
+            <div class="text-neutral-600 mt-1">Matilha Digital</div>
           </div>
         </div>
-        <div class="flex gap-8">
-          <div class="text-sm text-neutral-400 w-28 shrink-0 pt-0.5">2020</div>
+        <div class="flex gap-10">
+          <div class="text-sm text-neutral-400 w-32 shrink-0 pt-1">2020</div>
           <div>
-            <div class="font-medium">Front-End Developer</div>
-            <div class="text-neutral-600 text-sm mt-0.5">Cheil Brazil</div>
+            <div class="text-lg font-medium">Front-End Developer</div>
+            <div class="text-neutral-600 mt-1">Cheil Brazil</div>
           </div>
         </div>
-        <div class="flex gap-8">
-          <div class="text-sm text-neutral-400 w-28 shrink-0 pt-0.5">contínuo</div>
+        <div class="flex gap-10">
+          <div class="text-sm text-neutral-400 w-32 shrink-0 pt-1">contínuo</div>
           <div>
-            <div class="font-medium">Arquiteturas e IA</div>
-            <div class="text-neutral-600 text-sm mt-0.5">Projetos e estudos pessoais</div>
+            <div class="text-lg font-medium">Arquiteturas e IA</div>
+            <div class="text-neutral-600 mt-1">Projetos e estudos pessoais</div>
           </div>
         </div>
       </div>
@@ -127,63 +134,65 @@
   </section>
 
   <!-- 03 Projetos -->
-  <section id="projetos" class="py-24 px-6 border-t border-neutral-100">
+  <section id="projetos" class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="flex items-baseline gap-4 mb-12">
+      <div class="flex items-center gap-4 mb-12">
         <span class="text-sm font-medium text-neutral-400">03</span>
-        <div class="w-12 h-px bg-neutral-300"></div>
-        <h2 class="text-sm font-medium tracking-wide uppercase text-neutral-400">Projetos</h2>
+        <div class="flex-1 h-px bg-neutral-300 max-w-[80px]"></div>
+        <span class="text-sm font-medium tracking-wide uppercase text-neutral-400">Projetos</span>
       </div>
-      <div class="space-y-0">
-        <a href="https://github.com/graxz/llm-lab" target="_blank" class="group block py-8 border-b border-neutral-100 hover:bg-neutral-50/50 -mx-6 px-6 transition-colors">
+
+      <div class="divide-y divide-neutral-200">
+        <a href="https://github.com/graxz/llm-lab" target="_blank" class="group block py-10 hover:bg-white/40 -mx-6 px-6 transition-colors">
           <div class="flex items-baseline justify-between gap-6">
-            <h3 class="text-xl font-medium group-hover:underline underline-offset-4">LLM Lab</h3>
-            <span class="text-sm text-neutral-400 shrink-0">2026</span>
+            <h3 class="text-2xl font-medium group-hover:underline underline-offset-4">LLM Lab</h3>
+            <span class="text-sm text-neutral-400">2026</span>
           </div>
-          <p class="mt-2 text-neutral-600 max-w-2xl">Plataforma para estudar e aplicar conceitos de LLMs na prática: conversas, RAG, agentes, tool calling e observabilidade. Tudo em TypeScript e Node.</p>
+          <p class="mt-3 text-neutral-600 max-w-2xl">Plataforma para estudar e aplicar conceitos de LLMs na prática: conversas, RAG, agentes e observabilidade. TypeScript e Node.</p>
         </a>
-        <a href="https://github.com/graxz/docmind" target="_blank" class="group block py-8 border-b border-neutral-100 hover:bg-neutral-50/50 -mx-6 px-6 transition-colors">
+        <a href="https://github.com/graxz/docmind" target="_blank" class="group block py-10 hover:bg-white/40 -mx-6 px-6 transition-colors">
           <div class="flex items-baseline justify-between gap-6">
-            <h3 class="text-xl font-medium group-hover:underline underline-offset-4">DocMind</h3>
-            <span class="text-sm text-neutral-400 shrink-0">2026</span>
+            <h3 class="text-2xl font-medium group-hover:underline underline-offset-4">DocMind</h3>
+            <span class="text-sm text-neutral-400">2026</span>
           </div>
-          <p class="mt-2 text-neutral-600">Assistente de análise de documentos usando multi-agentes.</p>
+          <p class="mt-3 text-neutral-600">Assistente de análise de documentos usando multi-agentes.</p>
         </a>
-        <a href="https://github.com/graxz/architectures" target="_blank" class="group block py-8 border-b border-neutral-100 hover:bg-neutral-50/50 -mx-6 px-6 transition-colors">
+        <a href="https://github.com/graxz/architectures" target="_blank" class="group block py-10 hover:bg-white/40 -mx-6 px-6 transition-colors">
           <div class="flex items-baseline justify-between gap-6">
-            <h3 class="text-xl font-medium group-hover:underline underline-offset-4">Architectures</h3>
-            <span class="text-sm text-neutral-400 shrink-0">2022</span>
+            <h3 class="text-2xl font-medium group-hover:underline underline-offset-4">Architectures</h3>
+            <span class="text-sm text-neutral-400">2022</span>
           </div>
-          <p class="mt-2 text-neutral-600">Estudo e implementação prática de padrões: Facade, Observer, Singleton e Strategy.</p>
+          <p class="mt-3 text-neutral-600">Estudo e implementação prática de padrões: Facade, Observer, Singleton e Strategy.</p>
         </a>
-        <a href="https://github.com/graxz/actual-date" target="_blank" class="group block py-8 border-b border-neutral-100 hover:bg-neutral-50/50 -mx-6 px-6 transition-colors">
+        <a href="https://github.com/graxz/actual-date" target="_blank" class="group block py-10 hover:bg-white/40 -mx-6 px-6 transition-colors">
           <div class="flex items-baseline justify-between gap-6">
-            <h3 class="text-xl font-medium group-hover:underline underline-offset-4">Actual Date</h3>
-            <span class="text-sm text-neutral-400 shrink-0">2023</span>
+            <h3 class="text-2xl font-medium group-hover:underline underline-offset-4">Actual Date</h3>
+            <span class="text-sm text-neutral-400">2023</span>
           </div>
-          <p class="mt-2 text-neutral-600">API de data/hora com load balancer (PM2) e rate limiter. Experimento de alta disponibilidade.</p>
+          <p class="mt-3 text-neutral-600">API de data/hora com load balancer e rate limiter.</p>
         </a>
-        <a href="https://github.com/graxz/cnab-cli" target="_blank" class="group block py-8 border-b border-neutral-100 hover:bg-neutral-50/50 -mx-6 px-6 transition-colors">
+        <a href="https://github.com/graxz/cnab-cli" target="_blank" class="group block py-10 hover:bg-white/40 -mx-6 px-6 transition-colors">
           <div class="flex items-baseline justify-between gap-6">
-            <h3 class="text-xl font-medium group-hover:underline underline-offset-4">CNAB CLI</h3>
-            <span class="text-sm text-neutral-400 shrink-0">2025</span>
+            <h3 class="text-2xl font-medium group-hover:underline underline-offset-4">CNAB CLI</h3>
+            <span class="text-sm text-neutral-400">2025</span>
           </div>
-          <p class="mt-2 text-neutral-600">CLI para ler, buscar segmentos e exportar arquivos CNAB para JSON.</p>
+          <p class="mt-3 text-neutral-600">CLI para ler, buscar e exportar arquivos CNAB.</p>
         </a>
       </div>
-      <a href="https://github.com/graxz" target="_blank" class="inline-block mt-10 text-sm text-neutral-500 hover:text-neutral-900 transition-colors">Ver todos os repositórios →</a>
+
+      <a href="https://github.com/graxz" target="_blank" class="inline-block mt-12 text-sm text-neutral-500 hover:text-neutral-900">todos os repositórios →</a>
     </div>
   </section>
 
   <!-- 04 Stack -->
-  <section class="py-24 px-6 border-t border-neutral-100">
+  <section class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="flex items-baseline gap-4 mb-12">
+      <div class="flex items-center gap-4 mb-10">
         <span class="text-sm font-medium text-neutral-400">04</span>
-        <div class="w-12 h-px bg-neutral-300"></div>
-        <h2 class="text-sm font-medium tracking-wide uppercase text-neutral-400">Stack</h2>
+        <div class="flex-1 h-px bg-neutral-300 max-w-[80px]"></div>
+        <span class="text-sm font-medium tracking-wide uppercase text-neutral-400">Stack</span>
       </div>
-      <div class="flex flex-wrap gap-x-6 gap-y-3 text-base text-neutral-700 max-w-3xl">
+      <div class="flex flex-wrap gap-x-8 gap-y-4 text-lg text-neutral-800 max-w-3xl">
         <span>TypeScript</span>
         <span>Node.js</span>
         <span>NestJS</span>
@@ -204,12 +213,12 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-12 px-6 border-t border-neutral-100 text-sm text-neutral-500">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+  <footer class="py-16 px-6 text-sm text-neutral-500">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
       <span>© 2026 Isaddora Freitas</span>
-      <div class="flex gap-6">
-        <a href="https://github.com/graxz" target="_blank" class="hover:text-neutral-900 transition-colors">GitHub</a>
-        <a href="https://www.linkedin.com/in/isaddorafreitas/" target="_blank" class="hover:text-neutral-900 transition-colors">LinkedIn</a>
+      <div class="flex gap-8">
+        <a href="https://github.com/graxz" target="_blank" class="hover:text-neutral-900">GitHub</a>
+        <a href="https://www.linkedin.com/in/isaddorafreitas/" target="_blank" class="hover:text-neutral-900">LinkedIn</a>
       </div>
     </div>
   </footer>
